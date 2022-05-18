@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>UniPage</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Курсы</h2>
+
+            <div class="filter">
+                <div class="filter__item">
+                    <label for="filter-from">От &#x24;</label>
+                    <input
+                        class="filter__input"
+                        type="number"
+                        id="filter-from"
+                    />
+                </div>
+                <div class="filter__item">
+                    <label for="filter-to">До &#x24;</label>
+                    <input class="filter__input" type="number" id="filter-to" />
+                </div>
+            </div>
+
+            <div>
+                <button class="btn-clear">Очистить фильтры</button>
+                <p class="error display-none">Цена "До" не может быть ниже цены "От"</p>
+            </div>
+
+            <div class="courses">
+                <ul id="courses-list" class="courses__list"></ul>
+            </div>
+
+        </div>
+        <script src="js/index.js" defer></script>
+    </body>
+</html>
